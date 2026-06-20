@@ -9,15 +9,22 @@
     <h1>Calculadora</h1>
     <h2>Quais números deseja calcular?</h2>
         <label for="num1">Primeiro número:</label>
-            <input type="number">
-        <br> <br>
+            <input type="number" id="num1">
+        
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">*</button>
+        <button onclick="calcular('/')">/</button>
+
         <label for="num2">Segundo número:</label>
-            <input type="number">
-        <select name="Operacoes" id="Op">
-            <option value="+">Soma</option>
-            <option value="-">Subtração</option>
-            <option value="x">Multiplicação</option>
-            <option value="/">Divisão</option>
-        </select>
-</body>
+            <input type="number" id="num2">
+            <button onclick="calcular()">Calcular</button>
+            
+            <p id="res"> </p>
+            <script src="script.js"></script>
+        
+            /*git add .
+            git commit -m "Descreva o que mudou"
+            git push*/
+    </body>
 </html>
