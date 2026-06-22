@@ -1,16 +1,32 @@
-function calcular(Op){
-    const num1 = Number(document.getElementById("num1").value);
-    const num2 = Number(document.getElementById("num2").value);
+let tela= document.getElementById("tela");
+let num1;
+let op;
+let num2;
 
-    let res;
-        if (Op==='+'){
-            res = num1 + num2;
-        }   else if (Op=== '-'){
-            res = num1 - num2;
-        }   else if (Op=== '*'){
-            res = num1 * num2;
-        }   else if (Op==='/'){
-            res = num1 / num2;
+    function adicionar(numero){
+        tela.value += numero;
+    }
+
+    function tipoOP(operador){
+        num1= Number(tela.value);
+        op= operador;
+        tela.value=" ";
+    }
+
+    function calcular(){
+        num2= Number(tela.value);
+
+            if (op === "+"){
+                tela.value= num1 + num2;
+            } else if (op === "-"){
+                tela.value= num1 - num2;
+            } else if (op === "*"){
+                tela.value= num1 * num2;
+            } else if (op === "/"){
+                tela.value= num1 / num2;
+            }
+
         }
-        document.getElementById("res").textContent = `"Resultado:" ${res}`;
-}
+            function apagar(){
+                console.log("clicou")
+                tela.value= tela.value.slice(0, -1);}

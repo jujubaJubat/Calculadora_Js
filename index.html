@@ -9,19 +9,31 @@
 <body>
     <h1>Calculadora</h1>
     <h2>Quais números deseja calcular?</h2>
-        <label for="num1">Primeiro número:</label>
-            <input type="number" id="num1">
-        
-        <button onclick="calcular('+')">+</button>
-        <button onclick="calcular('-')">-</button>
-        <button onclick="calcular('*')">*</button>
-        <button onclick="calcular('/')">/</button>
 
-        <label for="num2">Segundo número:</label>
-            <input type="number" id="num2">
-            <button onclick="calcular()">Calcular</button>
+        <input type="text" readonly id="tela">
+        
+        <button onclick="adicionar('1')"> 1 </button>
+        <button onclick="adicionar('2')"> 2 </button>
+        <button onclick="adicionar('3')"> 3 </button>
+        <button onclick="adicionar('4')"> 4 </button>
+        <button onclick="adicionar('5')"> 5 </button>
+        <button onclick="adicionar('6')"> 6 </button>
+        <button onclick="adicionar('7')"> 7 </button>
+        <button onclick="adicionar('8')"> 8 </button>
+        <button onclick="adicionar('9')"> 9 </button>
+        <button onclick="adicionar('0')"> 0 </button>
+        
+
+        
+        <button onclick="tipoOP('+')">+</button>
+        <button onclick="tipoOp('-')">-</button>
+        <button onclick="tipoOP('*')">*</button>
+        <button onclick="tipoOP('/')">/</button>
+
+        
+            <button onclick="calcular()">=</button>
+            <button onclick="apagar()"> ⌫ </button>
             
-            <p id="res"> </p>
             <script src="script.js"></script>
         
             <!--git add .
